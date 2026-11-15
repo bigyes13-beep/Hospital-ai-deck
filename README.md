@@ -8,11 +8,12 @@
 GitHub Pages 배포 후 아래 주소에서 확인할 수 있습니다.
 
 ```
-https://bigyes13-beep.github.io/hospital-ai-desk/
+https://bigyes13-beep.github.io/Hospital-ai-deck/
 ```
 
 ## 구성
 
-- `index.html` — 단일 파일 웹 슬라이드(폰트·스타일·스크립트 모두 인라인, 외부 리소스 없음)
+- `index.html` — 단일 파일 웹 슬라이드 16장(폰트·스타일·스크립트 모두 인라인, 외부 리소스 없음)
+- 키보드 ←·→·Space·Home·End, 클릭·휠·스와이프로 이동, 모바일에서는 화면 정중앙에 맞춰 축소됩니다.
 
 > 본 문서는 `[브랜드명]`, `[병원명]`, `[담당자 연락처]`, `[이메일]` 자리표시자가 포함된 초안이며, 실제 계약·도입 전 검토용입니다.
