@@ -37,9 +37,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
 }
 
 /* ---------- stage ---------- */
-.viewport{position:fixed;inset:0;display:grid;place-items:center;overflow:hidden}
+.viewport{position:fixed;inset:0;overflow:hidden}
 .stage{
-  position:relative;width:1280px;height:720px;background:#fff;overflow:hidden;
+  position:absolute;left:50%;top:50%;width:1280px;height:720px;background:#fff;overflow:hidden;
+  transform:translate(-50%,-50%);
   transform-origin:center center;
   box-shadow:0 40px 110px rgba(0,0,0,.5);
 }
@@ -1166,7 +1167,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
   function fit(){
     var pad = (window.innerWidth < 780) ? 0 : 44;
     var s = Math.min((window.innerWidth - pad) / 1280, (window.innerHeight - pad) / 720);
-    stage.style.transform = 'scale(' + Math.max(s, 0.12) + ')';
+    stage.style.transform = 'translate(-50%, -50%) scale(' + Math.max(s, 0.12) + ')';
   }
   window.addEventListener('resize', fit);
   window.addEventListener('orientationchange', fit);
